@@ -39,8 +39,8 @@ public class ENDUSER {
 	       
 
 		}
-		@Test(priority=0)
-		public void loginregister() throws InterruptedException {
+	//	@Test(priority=0)
+	//	public void loginregister() throws InterruptedException {
 		
 //			   //login
 //			   driver.findElement(By.xpath("//a[contains(text(),'Login')]")).click();
@@ -54,31 +54,31 @@ public class ENDUSER {
 //			   driver.switchTo().alert().accept();
 //			   Thread.sleep(5000);
 //			   // user registeration
-			   //click on register
-			  driver.findElement(By.xpath("//a[contains(text(),'Register')]")).click();
-			   Thread.sleep(5000);
-			   
-			 
-			   
-			   driver.findElement(By.xpath("//input[@id='usr_name']")).sendKeys("abc");
-			   Thread.sleep(2000);
-			   
-			   driver.findElement(By.xpath("//input[@id='usr_email']")).sendKeys("poojasmalipatil4296@gmail.com");
-			   Thread.sleep(2000);
-			   
-			
-			   driver.findElement(By.xpath("//input[@id='usr_phone']")).sendKeys("9732458956");
-			   Thread.sleep(2000);
-			   driver.findElement(By.xpath("//input[@id='usr_password']")).sendKeys("user");
-			   Thread.sleep(2000);
-			   driver.findElement(By.xpath("//input[@id='usr_cpassword']")).sendKeys("user");
-			   Thread.sleep(2000);
-			   driver.findElement(By.xpath("//button[contains(text(),'Register Now')]")).click();
-			   Thread.sleep(2000);
-			   driver.switchTo().alert().accept();
-			   Thread.sleep(5000);
-			   
-		}	
+//			   //click on register
+//			  driver.findElement(By.xpath("//a[contains(text(),'Register')]")).click();
+//			   Thread.sleep(5000);
+//			   
+//			 
+//			   
+//			   driver.findElement(By.xpath("//input[@id='usr_name']")).sendKeys("abc");
+//			   Thread.sleep(2000);
+//			   
+//			   driver.findElement(By.xpath("//input[@id='usr_email']")).sendKeys("poojasmalipatil4296@gmail.com");
+//			   Thread.sleep(2000);
+//			   
+//			
+//			   driver.findElement(By.xpath("//input[@id='usr_phone']")).sendKeys("9732458956");
+//			   Thread.sleep(2000);
+//			   driver.findElement(By.xpath("//input[@id='usr_password']")).sendKeys("user");
+//			   Thread.sleep(2000);
+//			   driver.findElement(By.xpath("//input[@id='usr_cpassword']")).sendKeys("user");
+//			   Thread.sleep(2000);
+//			   driver.findElement(By.xpath("//button[contains(text(),'Register Now')]")).click();
+//			   Thread.sleep(2000);
+//			   driver.switchTo().alert().accept();
+//			   Thread.sleep(5000);
+//			   
+//		}	
 		@Test(priority=2)
 		public void search() throws InterruptedException {
 			//search property
@@ -106,11 +106,11 @@ public class ENDUSER {
 			
 			
 		
-		@AfterTest
-		public void close() {
-			driver.close();
-			
-		}
+//		@AfterTest
+//		public void close() {
+//			driver.close();
+//			
+//		}
 
 
 	}
