@@ -79,25 +79,107 @@ public class ENDUSER {
 //			   Thread.sleep(5000);
 //			   
 //		}	
-		@Test(priority=2)
-		public void search() throws InterruptedException {
-			//search property
-			//mousehover on properties
-			Actions action1=new Actions(driver);
-			   action1.moveToElement(driver.findElement(By.xpath(".//*[@id='undefined-sticky-wrapper']/div/div/div/div/nav/ul/li[4]/a"))).build().perform();
-			   Thread.sleep(5000);
-			   //mousehover on sale
-			   Actions action2=new Actions(driver);
-			   action2.moveToElement(driver.findElement(By.xpath(".//*[@id='undefined-sticky-wrapper']/div/div/div/div/nav/ul/li[4]/ul/li[1]/a"))).build().perform();
-			   Thread.sleep(5000);
-			   driver.findElement(By.xpath(".//*[@id='undefined-sticky-wrapper']/div/div/div/div/nav/ul/li[4]/ul/li[1]/ul/li[1]/a")).click();
-			   Thread.sleep(2000);
-			   
-			   
-			   
+	//	@Test(priority=2)
+	//	public void search() throws InterruptedException {
+//			//sale property
+//			//mousehover on properties
+//			Actions action1=new Actions(driver);
+//			   action1.moveToElement(driver.findElement(By.xpath(".//*[@id='undefined-sticky-wrapper']/div/div/div/div/nav/ul/li[4]/a"))).build().perform();
+//			   Thread.sleep(5000);
+//			   //mousehover on sale
+//			   Actions action2=new Actions(driver);
+//			   action2.moveToElement(driver.findElement(By.xpath(".//*[@id='undefined-sticky-wrapper']/div/div/div/div/nav/ul/li[4]/ul/li[1]/a"))).build().perform();
+//			   Thread.sleep(5000);
+//			   driver.findElement(By.xpath(".//*[@id='undefined-sticky-wrapper']/div/div/div/div/nav/ul/li[4]/ul/li[1]/ul/li[1]/a")).click();
+//			   Thread.sleep(2000);
+//			//rent property
+//		//	mousehover on properties
+//			Actions action3=new Actions(driver);
+//			   action3.moveToElement(driver.findElement(By.xpath(".//*[@id='undefined-sticky-wrapper']/div/div/div/div/nav/ul/li[4]/a"))).build().perform();
+//			   Thread.sleep(5000);
+//			   //mousehover on rent
+//			   Actions action4=new Actions(driver);
+//			   action4.moveToElement(driver.findElement(By.xpath(".//*[@id='undefined-sticky-wrapper']/div/div/div/div/nav/ul/li[4]/ul/li[1]/a"))).build().perform();
+//			   Thread.sleep(2000);
+//			   driver.findElement(By.xpath(".//*[@id='undefined-sticky-wrapper']/div/div/div/div/nav/ul/li[4]/ul/li[1]/ul/li[2]/a")).click();
+//			   Thread.sleep(2000);
+//			
+			
+		//}	
+//		@Test(priority=2)
+//		public void reg() throws InterruptedException	 {
+//			//agent registration
+//			//mousehover agentzone
+//			Actions action5=new Actions(driver);
+//			   action5.moveToElement(driver.findElement(By.xpath(".//*[@id='undefined-sticky-wrapper']/div/div/div/div/nav/ul/li[2]/a"))).build().perform();
+//			   Thread.sleep(5000);
+//			   //click post property free
+//			   driver.findElement(By.xpath(".//*[@id='undefined-sticky-wrapper']/div/div/div/div/nav/ul/li[2]/ul/li/a")).click();
+//			   Thread.sleep(5000);
+//			   //registration of agent
+//			   
+//			   driver.findElement(By.xpath("//input[@id='company_name']")).sendKeys("abc");
+//			   Thread.sleep(2000);
+//			   driver.findElement(By.xpath("//input[@id='contact_prson']")).sendKeys("dfghjk");
+//			   Thread.sleep(2000);
+//			   driver.findElement(By.xpath("//input[@id='cmpny_email']")).sendKeys("pooja@gmail.com");
+//			   Thread.sleep(2000);
+//			   //upload
+//			   WebElement upload=driver.findElement(By.xpath("//input[@id='profile_image']"));
+//				upload.sendKeys("C:\\Users\\HP\\Pictures\\Screenshot\\pic.jpeg");
+//			
+//			   driver.findElement(By.xpath("//input[@id='mobile_phone']")).sendKeys("9732548745");
+//			   Thread.sleep(2000);
+//			   driver.findElement(By.xpath("//input[@id='work_phone']")).sendKeys("9738548745");
+//			   Thread.sleep(2000);
+//			   driver.findElement(By.xpath("//textarea[@id='about_me']")).sendKeys("dfghjk");
+//			   Thread.sleep(2000);
+//			   driver.findElement(By.xpath("//input[@id='agnt_password']")).sendKeys("agentdemo");
+//			   Thread.sleep(2000);
+//			   driver.findElement(By.xpath("//input[@id='agnt_cpassword']")).sendKeys("agentdemo");
+//			   Thread.sleep(2000);
+//			   driver.findElement(By.xpath("//form[@id='agent_registration']//input[@name='submit']")).click();
+//			   Thread.sleep(2000);
+//			   
+//			
+//		}
+//		//search
+//		@Test(priority=2)
+//		public void searchproperty() throws InterruptedException {
+//			//search
+//			driver.findElement(By.xpath("//div[@class='row']//div[1]//div[1]//button[1]")).click();
+//			   Thread.sleep(2000);
+//			driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[1]/div[3]/div[1]/div[1]/form[1]/div[1]/div[1]/div[2]/div[1]/button[1]")).click();
+//			Thread.sleep(2000);
+//			driver.findElement(By.xpath("//div[@class='site-search-module']//div[3]//div[1]//button[1]")).click();
+//			   Thread.sleep(2000);
+//			driver.findElement(By.xpath("//div[@id='new_city']//button[@class='btn dropdown-toggle selectpicker btn-default']")).click();
+//			   Thread.sleep(2000);   
+//		    driver.findElement(By.xpath("//button[@class='btn btn-primary btn-block btn-lg']")).click();
+//			   Thread.sleep(2000);  
+//			   
+//			   //advance search
+//	 driver.findElement(By.xpath("//a[contains(text(),'Home')]")).click();
+//	 Thread.sleep(2000);		   
+//			
+//	driver.findElement(By.xpath("//a[@id='ads-trigger']")).click();
+//	Thread.sleep(2000);
+//	driver.findElement(By.xpath("//input[@id='min_price']")).clear();
+//	Thread.sleep(2000);
+//    driver.findElement(By.xpath("//input[@id='min_price']")).sendKeys("5000");
+//	 Thread.sleep(2000);
+//	driver.findElement(By.xpath("//input[@id='max_price']")).clear();
+//	Thread.sleep(2000);   
+//    driver.findElement(By.xpath("//input[@id='max_price']")).sendKeys("10000");
+//	Thread.sleep(2000);
+//	driver.findElement(By.xpath("//button[@class='btn btn-primary btn-block btn-lg']")).click();
+//	Thread.sleep(2000);
+//			
+//			
+//		}
+//		
 		
 		
-		}
 			   
 			 
 			
